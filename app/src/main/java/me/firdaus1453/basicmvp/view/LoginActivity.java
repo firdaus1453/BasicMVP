@@ -1,4 +1,4 @@
-package me.firdaus1453.basicmvp.ui.login;
+package me.firdaus1453.basicmvp.view;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -12,7 +12,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import me.firdaus1453.basicmvp.R;
-import me.firdaus1453.basicmvp.ui.main.MainActivity;
+import me.firdaus1453.basicmvp.login.LoginContract;
+import me.firdaus1453.basicmvp.login.LoginPresenter;
 
 public class LoginActivity extends AppCompatActivity implements LoginContract.View {
 
@@ -60,7 +61,7 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
 
     @OnClick(R.id.btnLogin)
     public void onViewClicked() {
-        loginPresenter.onLoginClick(edtEmail.getText().toString(),
+        loginPresenter.doLogin(edtEmail.getText().toString(),
                 edtPassword.getText().toString());
     }
 }

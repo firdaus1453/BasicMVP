@@ -1,6 +1,4 @@
-package me.firdaus1453.basicmvp.ui.login;
-
-import me.firdaus1453.basicmvp.model.login.LoginBody;
+package me.firdaus1453.basicmvp.login;
 
 /**
  * Created by firdaus1453 on 2/4/2019.
@@ -14,6 +12,6 @@ public interface LoginContract {
     }
 
     interface Presenter{
-        void onLoginClick(String email, String password);
+        void doLogin(String email, String password);
     }
 }

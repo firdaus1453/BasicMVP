@@ -1,7 +1,7 @@
-package me.firdaus1453.basicmvp.ui.login;
+package me.firdaus1453.basicmvp.login;
 
-import me.firdaus1453.basicmvp.model.login.LoginBody;
-import me.firdaus1453.basicmvp.model.login.LoginResponse;
+import me.firdaus1453.basicmvp.model.LoginBody;
+import me.firdaus1453.basicmvp.model.LoginResponse;
 import me.firdaus1453.basicmvp.network.ApiClient;
 import me.firdaus1453.basicmvp.network.ApiInterface;
 import retrofit2.Call;
@@ -21,7 +21,7 @@ public class LoginPresenter implements LoginContract.Presenter {
     }
 
     @Override
-    public void onLoginClick(String email, String password) {
+    public void doLogin(String email, String password) {
 
         //validate email and password
         if (email == null || email.isEmpty()) {
@@ -63,6 +63,4 @@ public class LoginPresenter implements LoginContract.Presenter {
         });
 
     }
-
-
 }

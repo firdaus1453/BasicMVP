@@ -1,4 +1,4 @@
-package me.firdaus1453.basicmvp.model.login;
+package me.firdaus1453.basicmvp.model;
 
 import com.google.gson.annotations.SerializedName;
 
