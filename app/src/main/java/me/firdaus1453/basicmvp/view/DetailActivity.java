@@ -38,7 +38,6 @@ public class DetailActivity extends AppCompatActivity implements DetailContract.
 
         Bundle bundle = getIntent().getExtras();
         detailPresenter.getDataSingleUser(bundle);
-
     }
 
     @Override
